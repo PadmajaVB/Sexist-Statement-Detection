@@ -2,10 +2,7 @@ import tensorflow as tf
 import numpy as np
 import json
 from tensorflow import keras
-from flask import request
-
-
-from flask import Flask
+from flask import request, render_template, Flask
 
 app = Flask(__name__)
 
@@ -27,10 +24,10 @@ def sexist_or_not():
 
     result = model.predict([x_test])
     pred = result[0][0]
-    sentiment = "Not Sexist"
+    sentiment = "The comment is not sexist"
     if pred>0.5:
-        sentiment= "Sexist"
-    return sentiment
+        sentiment= "Yikes! The comment is Sexist"
+    return render_template('main.html', data=sentiment)
 
     
     
