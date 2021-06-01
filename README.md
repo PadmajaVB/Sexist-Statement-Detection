@@ -21,4 +21,4 @@ We've experimented with following models
 
 DistilBert and Bidirectional LSTM seems to perform well.
 
-Final notebook - https://github.com/PadmajaVB/Sexist-Statement-Detection/blob/main/SexistCommentDetection_Final.ipynb
+Final notebook - https://github.com/PadmajaVB/Sexist-Statement-Detection/blob/main/compiled_notebook.ipynb
